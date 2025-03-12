@@ -1,0 +1,38 @@
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 0x09, 0x01
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+///////////////////////////////////////////////////////////////////////////
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+"\r\n"
+"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+IDR_DLL1                RCDATA "UserModeRootkitDLL.dll" // Make sure the DLL file is in the project directory or provide a correct relative path
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
