@@ -12,7 +12,7 @@ Steps to build:
 
 Open the .sln file (Solution) using Visual Studio 2022
 
-Attach the DLL into the resources list (dont use my DLL, its just a messagebox, remove the resource.rc)
+Attach the DLL into the resources list (dont use my DLL, its just a messagebox, redefine the UserModeRookitDLL.dll)
 
 Build that cheat!
 
