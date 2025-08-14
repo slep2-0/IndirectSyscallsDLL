@@ -90,7 +90,7 @@ static std::wstring WriteDLLToTempFile(const void* dllData, size_t dllSize) {
     return std::wstring(tempFileName);
 }
 
-static int InjectDLLIntoTheFreakingProcessAlready(DWORD PID, const void* dllData, size_t dllSize) {
+static int InjectDLL(DWORD PID, const void* dllData, size_t dllSize) {
     // Validate input parameters
     if (!dllData || dllSize == 0) {
         printf("Invalid DLL data or size\n");
@@ -261,7 +261,7 @@ int main() {
 	// Then modify the loop to use actual process count
 	for (int i = 0; i < processesCount; i++) {
 		if (goodProcesses[i] != 0) { // Add check for valid PID
-			int result = InjectDLLIntoTheFreakingProcessAlready(goodProcesses[i], dllData, dllSize);
+			int result = InjectDLL(goodProcesses[i], dllData, dllSize);
 			if (result == 1) {
 				std::cerr << "Injection failed for process ID: " << goodProcesses[i] << std::endl;
 				continue; // Continue with next process instead of returning
