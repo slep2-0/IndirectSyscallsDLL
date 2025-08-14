@@ -13,7 +13,6 @@ extern "C" UINT_PTR NtOpenProcessTokenSyscall = NULL;
 #include <filesystem>
 #include <fstream>
 
-// Inject that shit!
 static bool IsGoodUserModeProcess(DWORD processID) {
 	// Open the process to get its token and check its user
 	HANDLE hProcess = NULL;
